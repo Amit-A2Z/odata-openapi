@@ -1582,8 +1582,11 @@
               and not(
                 @Name = $read-only
                 or @Name = $computed
+                or @Name = $computeddefaultvalue
                 or concat($qualifiedName, '/', @Name) = $computed-ext
                 or concat($aliasQualifiedName, '/', @Name) = $computed-ext
+                or concat($qualifiedName, '/', @Name) = $computeddefaultvalue-ext
+                or concat($aliasQualifiedName, '/', @Name) = $computeddefaultvalue-ext
               )
             )
             or concat($qualifiedName, '/', @Name) = $mandatory
