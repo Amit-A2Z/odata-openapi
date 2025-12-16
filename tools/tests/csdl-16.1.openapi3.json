@@ -2194,9 +2194,6 @@
                         }
                     }
                 },
-                "required": [
-                    "ID"
-                ],
                 "title": "Supplier (for create)"
             },
             "ODataDemo.Supplier-update": {
